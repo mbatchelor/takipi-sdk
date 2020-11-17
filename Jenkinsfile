@@ -23,7 +23,7 @@ pipeline {
 
     stage('Sonar') {
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         configFileProvider([configFile(fileId: 'MavenSettings', variable: 'MAVEN_SETTINGS_XML')]) {
